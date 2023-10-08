@@ -1,4 +1,7 @@
 package ru.netology.javaqa;
+
+import java.util.Objects;
+
 public class Product {
     protected int id;
     protected String title;
@@ -29,10 +32,12 @@ public class Product {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(id, title, price);
     }
 
     public int getId() {
+
         return id;
     }
 
@@ -44,6 +49,4 @@ public class Product {
         return price;
     }
 
-
 }
-
